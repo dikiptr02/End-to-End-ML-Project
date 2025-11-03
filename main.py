@@ -1,1 +1,4 @@
-from src.MlProject.config.configuration import main
+from MlProject import logger
+
+
+logger.info("My name is Diki")
