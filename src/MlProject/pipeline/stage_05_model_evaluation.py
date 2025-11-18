@@ -1,9 +1,9 @@
-from src.mlProject.config.configuration import ConfigurationManager
-from src.mlProject.components.model_evaluation import ModelEvaluation
-from src.mlProject import logger
+from mlProject.config.configuration import ConfigurationManager
+from mlProject.components.model_evaluation import ModelEvaluation
+from mlProject import logger
 
 
-STAGE_NAME = "Model Evaluation stage"
+STAGE_NAME = "Model evaluation stage"
 
 
 class ModelEvaluationTrainingPipeline:
@@ -18,12 +18,12 @@ class ModelEvaluationTrainingPipeline:
 
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     try:
-        logger.info(f">>>>>> Stage {STAGE_NAME} started <<<<<<")
+        logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
         obj = ModelEvaluationTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>> Stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+        logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
     except Exception as e:
         logger.exception(e)
         raise e
